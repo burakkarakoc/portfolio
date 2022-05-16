@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burak Karakoc</title>
+  </head>
+  <body>
+    <canvas id="background"></canvas>   
+    <main>
+
+      <header>
+        <h1>Burak Karakoc</h1>
+        <p>🚀 Welcome to my website!</p>
+        <div class="social-media-icons">
+         
+            <svg width="100" height="100">
+              <a href="https://www.linkedin.com/in/burakkarakoc/" class="social-icon">
+                <circle class="cr" cx="50" cy="50" r="40" stroke="grey" stroke-width="2" fill="white"/>
+                <image class="im" xlink:href="assets/li.png" x="25" y="25" height="50px" width="50px"></image>
+              </a>
+            </svg>
+          
+          <svg width="100" height="100">
+            <a href="https://github.com/burakkarakoc" class="social-icon">
+              <circle class="cr" cx="50" cy="50" r="40" stroke="grey" stroke-width="2" fill="white"/>
+              <image class="im" xlink:href="assets/gh.png" x="25" y="25" height="50px" width="50px"></image>
+            </a>
+          </svg>
+
+        </div>
+      </header>
+
+      <blockquote>
+        <p>Computer Science / Mathematics  @Technische Universität Darmstadt</p>
+      </blockquote>
+
+      <!-- <section>
+        <h2>📜 Who Am I?</h2>
+        <p>
+          A passionate computer science student 
+          <br>
+          currently @SabanciUniversity and @TU Darmstadt
+        </p>
+      </section> -->
+
+      <section class="left">
+
+        <h2>🤖 TECHNICAL EXPERIENCE</h2>
+
+        <h3>LEARNING ASSISTANT</h3>
+        <h4>MOBILE APPLICATION DEVELOPMENT (CS-310)</h4>
+        <p>
+          Teaching and helping students at CS310(Mobile Application Development) course. 
+          <br> <br>
+          Reading and grading the programs, homework, and exam questions of students. Programs in that course are based on
+          developing all kinds of both front-end and back-end solutions which are required to develop an multi-platform application(web,
+          android, and ios).
+          <br><br>
+          Conducting 4 hours of office hours every week.
+        </p>
+
+        <h3>RESEARCH ASSISTANT</h3>
+        <h4>ML AND COMPUTER VISION AIDED SOFTWARE TESTING</h4>
+        <p>
+          Abstract:
+            End-to-end (E2E) testing is a technique that tests the entire software product from beginning to end to ensure the application flow behaves as expected. The main objective is to test from the end user’s experience by simulating the real user scenario and validating the system under test and its components. Unfortunately, end-to-end tests are particularly fragile as any change in the application interface, e.g., application flow, location, or name of graphical user interface (GUI) elements, requires a change in the tests.
+            The key to efficient, less resource-dependent test automation is to have AI/ML-aided testing systems. In this project, our ambition is to develop a learning-based approach that understands changes in the application interface and updates the test cases accordingly to ensure that the system under test is performing as designed.
+          <br><br>
+          I have implemented two different computer vision algorithms so that the program can find all the UI components’ physical location on the screen synchronously. Generating and returning retrievable objects from the UI components’ and its properties (eg. JSON).
+          <br><br>
+          I have written a module to conduct a test on the computer vision algorithms that we are using. The module basically compares the retrieved object from a certain CV algorithm, and actually what is in that location (eg. done by DOM parsing). In the end, returns a truth value (eg. percentage).
+        </p>
+
+        <h3>ARTIFICIAL INTELLIGENCE INTERN</h3>
+        <h4>TURKISH CREDIT BUREAU</h4>
+        <p>
+          The first program I have developed is based on using OCR technology(Tesseract Engine) to detect all the elements in a given image and return its locations. Also, it returns the location of any search expression.
+          This is useful because, until now, the tests are running by requiring to be fed by some specific XML(XPath, etc.) or HTML tag to conduct the test. However, since the scheme of the specific page is changed if another component is inserted into upper levels(div, etc.), the properties of the element can easily differ either. For instance, Xpath was strongly used to find a web element, however, the path is changed if there is a new parent tag, namely, it changes the elements path.
+          After this module, since it finds the element’s location, tests will be running by giving the click location. This avoids unnecessary
+          failed test cases, which is important for the company.
+          <br><br>
+          The second one is based on developing a machine learning module for predicting the element that was tried to given by
+          analysts. For example, let our test case include "Click on the element that has the title of (Login)", but on the page, we have a button that says (Enter). So we aim to click it, however, it is not possible without ML. This module is important because it avoids wrongly failed test cases.
+        </p> 
+
+        <h3>FOUNDER</h3>
+        <h4>CreArt LLC</h4>
+        <p>
+          CreArt is a company built on e-commerce business and entrepreneurship projects in MIDDLETOWN, DELAWARE. This business serves in several marketplaces in the USA. Achieved a good amount of happy customers in a short time.
+        </p> 
+       </section>
+
+        <section class="light">
+
+          <h2>👩🏽‍🚀 PROJECTS OF THE COURSES</h2>
+
+          <h3>SPOTIFY SONG POPULARITY PREDICTION</h3>
+          <h4>INTRODUCTION TO DATA SCIENCE (CS-210) GRADE:A</h4>
+          <p>
+            -> This project aims to predict the popularity parameter of the songs by looking at some sensible parameters of the provided data-set and deciding accordingly.
+            <br>
+            -> The huge song data is processed to get ready for an accurate hypothesis testing.
+            <br>
+            -> Outliers detected with the ’Gaussian Distribution Approach’. More specifically I set the z-score threshold to 3 and assumed an
+               outlier if a song has a z-score bigger than 3. This way I detected and eliminated the outliers.
+            <br>
+            -> Dependency test applied to some parameters to understand whether popularity parameter is related to some other parameters
+               (eg. Chi-Square Test).
+            <br>
+            -> Proper hypothesis test was designed. After the result, necessary parameters are labeled since most of them are continuous.
+            <br>
+            -> After all those processes, I applied three different machine learning algorithms to compare which ones worked better and why.
+               Those three algorithms are KNN, Decision Tree, Random Forest, and all necessary processes for them (eg. hyper-parameter tuning, standardization, cross-validation).
+          </p>
+
+          <h3>TWITTER CLONE</h3>
+          <h4>MOBILE APPLICATION DEVELOPMENT (CS-310) GRADE:A</h4>
+          <p>
+            -> This project has huge spectrum of concepts, since it requires to develop a full stack application.
+            <br>
+            -> Flutter SDK is used for its multi-platform usefulness.
+            <br>
+            -> App’s user inteface design is pretty similar to twitter.
+            <br>
+            -> Google Firebase is used as the back-end of this app. (auth for sign-in or sign-up processes, analytics, google sign-in and facebook
+            sign-in enabled).
+            <br>
+            -> Google Firestore used as the database of the app.
+          </p>
+
+
+          <h3>TECHNOLOGY E-COMMERCE WEBSITE (MEDIAMARKT)</h3>
+          <h4>DATABASE SYSTEMS (CS-306) GRADE:B+</h4>
+          <p>
+            -> As the front-end of the project, HTML, CSS, and JavaScript are used.
+            <br>
+            -> As the back-end of the project PHP and SQL are used.
+            <br>
+            -> I have used MySQL as the DB management system and XAMPP to develop the project in local.
+            <br>
+            -> In the end, the product is very similar to the websites like MediaMarkt or Best Buy.
+          </p>
+
+          <h3>ALL PROJECTS</h3>
+          <h4>DATA STRUCTURES (CS-300) GRADE:B</h4>
+          <p>
+            -> Multilevel Feedback Queue Implementation.
+            <br>
+            -> Zip Program Using Liv-Zempel Data Compression Algorithm and Hash Maps Data Structure
+            <br>
+            -> Collision Detection Program Using Binary Search Tree Data Structure
+          </p>
+
+          <h3>ALL PROJECTS</h3>
+          <h4>HARVARD ARTIFICIAL INTELLIGENCE (CS50AI)</h4>
+          <p>
+            -> The first project is basically Six Degrees of Kevin Bacon game. The aim is to play the game in the shortest path fashion with the graph data structure. At the end, the program finds the path between start and the target actors.
+            <br>
+            -> The second project is Tic-Tac-Toe game. The aim of the program is to implement an AI with the MiniMax algorithm to play the Tic-Tac-Toe optimally.
+          </p>
+
+        </section>
+
+        <section class="left">
+          <h2>🛸 EDUCATION</h2>
+          <h4>Bachelor of Science in Informatik, Technische Universität Darmstadt (03.2022 - 09.2023)</h4>
+          <h4>Bachelor of Science in Computer Science and Engineering, Sabanci University (10.2018 - 06.2023)</h4>
+          <h4>Minor in Mathematics, Sabanci University (10.2020 - 06.2023)</h4>
+        </section>
+
+      <!-- <blockquote>
+        <p>Thank you!</p>
+      </blockquote> -->
+
+
+    </main>
+    
+    <script type="module" src="main.js"></script>
+
+  </body>
+</html>
